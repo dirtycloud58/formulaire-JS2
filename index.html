@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Les formulaires HTML et JavaScript</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <span class ="note"></span>
+
+    <form>
+      <div class="field">
+        <label for="identifiant">Identifiant</label>
+        <input type="text" id="identifiant" name="identifiant">
+        <div class="info point-identifiant">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label for="password">Mot de passe</label>
+        <div class="view">
+          <input type="password" id="password" name="password" required> 
+            <img src="IMG/eye.png" alt="eye" id="changeEye" onclick="changeImage()">
+        </div>
+        <div class="info point-password">
+        </div>
+      </div>
+     
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+      </div>
+ 
+      <div class="button"> 
+      <input type="submit" id="btn-submit" name="btn-submit"></div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

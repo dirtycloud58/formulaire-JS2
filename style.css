@@ -1,0 +1,148 @@
+body{
+  font-family: "Montserrat", sans-serif;
+  background-color: #118ab2;
+}
+form{
+  vertical-align: middle;
+  top: 50%;
+  transform: translateY(50%);
+  width: 25%;
+  margin: 0 auto;
+  border: 1px solid black;
+  background-color: #073b4c;
+  padding: 2%;
+  border: none;
+  border-radius: 15px;
+}
+
+.field{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  background-color: #118ab2;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+label{
+  padding: 2%;
+  margin: 2%;
+  color: white;
+  font-weight: bold;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+}
+
+#btn-submit{
+  width: 50%;
+  background-color: #ffd166;
+  border-radius: 15px;
+  font-size: 1em; 
+  color: white;
+  font-weight: bold;
+  transition: background 1s, transform 0.3s, ease-out;
+}
+#btn-submit:hover{
+  cursor: pointer;
+  background: linear-gradient(#118ab2, #ffd166);
+  transform: scale(1.1);
+}
+
+input{
+  padding: 3%;
+  border: none;
+  border-radius: 0 0 15px 15px;
+  outline: none;
+}
+#password{
+  width: 85vw;
+  border-radius: 0 0 0 15px;
+}
+
+.info{
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  width: 25px;
+  height: 25px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-image: url("IMG/info2.svg");
+  background-color: white;
+  background-size: contain;
+}
+.info-ok{
+  background-color: #06d6a0;
+}
+.info-return{
+  background-color: #ef476f;
+}
+.info:hover{
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.info p{
+  visibility: hidden;
+}
+.info:hover p{
+  visibility: visible;
+  display: block;
+  background-color: white;
+  width: 25vw;
+  height: auto;
+  margin: 5%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.view{
+  display: flex;
+  justify-content: space-between;
+}
+
+img{
+  background-color: white;
+  width: 25px;
+  border-radius: 0 0 15px 0;
+  padding: 2%;
+}
+img:hover{
+  cursor: pointer;
+}
+
+.note{
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform:translate(-50%, 0%);
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  vertical-align: middle;
+  width: 25vw;
+  height: 8vh;
+  padding: 2%;
+  visibility: hidden;
+}
+                          /* breakpoint */
+
+@media screen and (max-width: 768px){
+
+  form {
+    width: 80%;
+  }
+
+.info{
+  width: 15px;
+  height: 15px;
+}
+  .note{
+    width: 80vw;
+    height: 20vh;
+  }
+}
